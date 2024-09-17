@@ -1,31 +1,61 @@
-# Stock Investment Portfolio System MVC
+# Stock Investment Portfolio System
 
-## Flexible Portfolio Features:
-1. Create Portfolio
-2. Examine Portfolio
-3. Buy/Sell Shares
-4. Get Cost Basis
-5. Get Total Valuation
-6. Display Portfolio Graph
-7. Upload Portfolio
+```
+Project Folder
+├── data
+│   └── Symbol_List.txt
+├── portfolios
+├── src
+├── flexible_portfolios
+└── strategy
+    └── dollarCostAveraging.json
+Libraries
+```
+```
+org.apache.directory.studio:org.apache.commons.io:2.4
+com.fasterxml.jackson.core:jackson-core:2.13.3
+com.fasterxml.jackson.core:jackson-annotations:2.13.3
+com.fasterxml.jackson.core:jackson-databind:2.13.3   
+com.google.code.gson:gson:2.10
+com.googlecode.json-simple:json-simple:1.1.1
+org.swinglabs:swingx:1.6.1
+```
 
-### Key Operations:
-- **Create Portfolio**: User inputs symbol, quantity, date, and commission. After validation, the portfolio is created.
-- **Examine Portfolio**: Displays existing portfolios up to a specified date.
-- **Buy/Sell Shares**: User provides stock symbol, quantity, date, and commission. Validations determine success or error.
-- **Cost Basis**: Calculates the invested amount and commissions up to a given date.
-- **Get Valuation**: Shows portfolio valuation on a specific date.
-- **Display Graph**: Shows portfolio valuation between two dates using an asterisk pattern.
-- **Upload Portfolio**: User provides the file path to load the portfolio in Symbol-Quantity format.
+Installation
 
-## Inflexible Portfolio Features:
-1. Create Portfolio
-2. Examine Portfolio
-3. Get Valuation
-4. Load Portfolio
+Navigate to the project directory.
+Use your IDE's Maven integration to add the libraries.
+Running the Project
 
-### Key Operations:
-- **Create Portfolio**: User inputs symbol and quantity, and after validation, the portfolio is created.
-- **Examine Portfolio**: Displays portfolios with symbols and quantities.
-- **Get Valuation**: Shows portfolio valuation on a specific date.
-- **Load Portfolio**: Loads portfolio from a file provided by the user in Symbol-Quantity format.
+Open a terminal in the project directory.
+Execute: ```java -jar stockinvestment.jar Text```
+
+# Project Features
+Core Functionalities:
+
+Create Portfolio
+Examine Portfolio
+Get Valuation
+
+# Additional Features:
+
+Buy/Sell Shares
+Cost Basis
+Display Portfolio Graph
+Upload Portfolio
+Design Overview
+
+- MVC Architecture: Uses Model-View-Controller for separation of concerns.
+- Interfaces: Defines contracts for model, controller, and view components.
+- Flexible Portfolio: Extends the base portfolio with additional features.
+- Strategy: Implements a strategy-based investment approach (e.g., dollar-cost averaging).
+- Swing UI: Provides a graphical interface for user interaction.
+
+# Key Points:
+
+- Data Storage: Uses data/Symbol_List.txt for stock data.
+- Configuration: src/config.properties contains project settings.
+- Portfolios: Generated portfolios are stored in the portfolios folder.
+- Libraries: Essential for project functionality.
+- Execution: Run the JAR file from the project directory.
+
