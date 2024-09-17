@@ -1,4 +1,4 @@
-#Stock Investment Portfolio System MVC
+# Stock Investment Portfolio System MVC
 
 For Flexible Portfolio
 Our program offers the following utilities to the user for flexible portfolios.
