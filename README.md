@@ -1,7 +1,4 @@
-# PDPAssignment4
-# Group Member
-# Bhupesh Patil
-# Hemraj Mahadeshwar
+#Stock Investment Portfolio System MVC
 
 For Flexible Portfolio
 Our program offers the following utilities to the user for flexible portfolios.
